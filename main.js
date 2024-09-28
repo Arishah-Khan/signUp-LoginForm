@@ -122,8 +122,9 @@ loginBtn.addEventListener("click", function (event) {
             if ((user.username === userdata || user.email === userdata) && user.password === password) {
                 Swal.fire({
                     icon: 'success',
-                    title: 'Login successful to Shh!',
-                    text: 'Welcome, ' + user.username + '! Thanks for logging in to Shh.',
+                    title: 'Welcome Back!',
+                    text: 'Hello, ' + user.username + '! You’re logged in and ready to explore everything we have to offer!',
+                    
                     confirmButtonText: 'OK',
                     confirmButtonColor: '#3085d6'
                 });
