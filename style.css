@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    background-color: #8c5cb3;
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divOne,
+.setPostion {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.divOne {
+    padding: 20px;
+    text-align: center;
+    margin: 30px
+}
+
+.setPostion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    color: white;
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, transform 0.3s; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: black;
+    outline: none;
+    transform: translateY(-2px); 
+}
+
+
+
+.form-check-input {
+    margin-right: 5px;
+}
+
+
+a {
+    color: #271437;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 600;
+}
+
+button a {
+    color: white;
+}
+
+button a:hover {
+    color: black;
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow to the button */
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #351e47;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Make the shadow larger on hover */
+}
+img {
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+        width: 100%;
+
+}
+
+.size-control {
+    width: 100%;
+}
+
+@media (min-width:420px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+        margin: 30px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .divOne {
+        margin: 5px;
+    }
+
+    .size-control {
+        width: 300px;
+    }
+
+    .setImg {
+        margin: 0px 20px;
+        padding: 0px 20px 10px;
+
+    }
+
+    .setContainer {
+        padding-bottom: 0px;
+        margin: 20px;
+
+
+    }
+
+    .changeSpace {
+        position: relative;
+        top: -180px;
+        right: 100px;
+    }
+
+    .setDiv {
+        position: relative;
+        top: 70px;
+        left: 130px;
+        width: 70%;
+    }
+
+}
+.form-check{
+    text-align: start;
+}
+
+@media (max-width : 420px) {
+    .size-control {
+        width: 250px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .divOne {
+        margin: 5px;
+    }
+
+    button {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .setContainer {
+        padding-bottom: 0px;
+        margin: 20px;
+
+
+    }
+
+    .changeSpace {
+        position: relative;
+        top: -160px;
+        right: 50px;
+    }
+
+    .setDiv {
+        position: relative;
+        top: 70px;
+        left: 110px;
+        width: 60%;
+        font-size: 12px;
+    }
+}
+
+.heading {
+    font-weight: bolder;
+
+}
